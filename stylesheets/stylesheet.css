@@ -1,0 +1,129 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+    font-family: "Poppins", "sans-serif";
+}
+
+p {
+    font-size: 15px;
+}
+
+.header {
+
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 100;
+    margin-bottom: -30px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: hsl(234, 12%, 34%);
+}
+
+h3 {
+    color: hsl(234, 12%, 34%);
+    font-size: 20px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    text-align: right;
+    box-shadow: 0 4px 20px -10px #222;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.box-text {
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.box1 {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.box2 {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.box3 {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.box4 {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.box1,
+.box4 {
+    align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top: 10%;
+        width: 300px;
+        border-radius: 10px 10px 10px 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main {
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        margin-top: 60px;
+    }
+    .box {
+        background-color: #fff;
+        border-radius: 7px;
+        padding: 30px;
+        text-align: right;
+        box-shadow: 0 4px 20px -10px #222;
+        margin-bottom: 20px;
+    }
+
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .box1,
+    .box4 {
+        align-self:normal;
+    }
+
+}
